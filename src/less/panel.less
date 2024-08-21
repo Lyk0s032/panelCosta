@@ -1,0 +1,240 @@
+.panel{
+    height:100vh;
+    box-sizing: border-box;
+
+    .containerPanel{
+        height:100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+
+        .left{
+            width:50%;
+
+            .call{
+                height:100%;
+                box-sizing: border-box;
+
+                .containerCall{
+                    display: flex;
+                    align-items: end;
+                    height:100%;
+                    .leftNav{
+                        width:30%;
+                        border-right: 1px solid #F3f3f4;
+                        border: 2px solid #F3f3f4;
+                        box-sizing: border-box;
+                        height:90%;
+                        nav{
+                            padding:10px;
+                            box-sizing: border-box;
+                            ul{
+                                li{
+                                    padding:10px;
+                                    box-sizing: border-box;
+                                    cursor: pointer;
+                                    display: flex;
+                                    border-radius: 20px;
+                                    transition: .3s;
+                                    margin:10px 0px;
+                                    span{
+                                        color: #666;
+                                        font-size: 12px;
+                                    }
+                                }
+                                li:hover{
+                                    background-color: #ccc;
+                                }
+                                li.Active{
+                                    background-color: #666;
+
+                                    span{
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .list{
+                        width:70%;
+                        height:100%;
+                        box-sizing: border-box;
+                        .title{
+                            height:10%;
+                            display: flex;
+                            align-items: center;
+                            box-sizing: border-box;
+
+                            h1{
+                                font-weight: 400;
+                                font-size: 20px;
+                            }
+                        }
+                        .container{
+                            overflow-y: auto;
+                            height:90%;
+                            border-top: 2px solid #F3f3f4;
+                            box-sizing: border-box;
+                            .c{
+                                .item{
+                                    width:90%;
+                                    padding:20px 20px;
+                                    box-sizing: border-box;
+                                    border-bottom: 1px solid #F3f3f4;
+                                    cursor: pointer;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    transition: .3s;
+                                    .iconCont{
+                                        width:20%;
+                                        text-align: center;
+                                        .icon{
+                                            font-size: 24px;
+                                            color: blue;
+                                        }
+                                    }
+                                    .desc{
+                                        width:60%;
+
+                                        h3{
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            color: blue;
+                                        }
+                                        span{
+                                            font-size: 14px;
+                                            color: green;
+                                            font-style: italic;
+                                        }
+
+                                        strong{
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            margin:10px 0px;
+                                        }
+                                    }
+                                    .state{
+                                        width:20%;
+                                        text-align: center;
+                                        span{
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+                                .item:hover{
+                                    transform: translateX(5%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .stateBox{
+            width:50%;
+            height:100%;
+            box-sizing: border-box;
+            padding:0px 20px;
+            .boxCurrentlyNone{
+                height:100%;
+                display: flex;
+                align-items: center;
+                width:100%;
+                justify-content: space-around;
+                h1{
+                    font-weight: 100;
+                    color: #ccc;
+                }
+            }
+            .boxCurrently{
+                height: 100%;
+                .top{
+                    height:10%;
+                    display: flex;
+                    align-items: center;
+                    
+                    h3{
+                        font-weight: 400;
+                        font-size: 22px;
+                    }
+                }
+                .info{
+                    height:70%;
+                    display: flex;
+                    align-items: center;
+                    .containerInfoCall{
+                        width:100%;
+                        margin:auto;
+    
+                        .by{
+                            strong{
+                                font-size: 14px;
+                                color: #666;
+                            }
+                            span{
+                                color: green;
+                                font-size: 14px;
+                            }
+                        }
+                        .user{
+                            strong{
+                                color: #666;
+                                font-size: 14px;
+                            }
+                            span{
+                                color: blue;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .bottom{
+                    height:20%;
+                    display: flex;
+                    align-items: center;
+    
+                    nav{
+                        width:100%;
+                        ul{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width:100%;
+                            li{
+                                display: inline-block;
+                                padding:8px 40px;
+                                box-sizing: border-box;
+                                cursor: pointer;
+                                transition: .3s;
+                                margin-right: 5px;
+                                border-radius: 20px;
+                                font-size: 14px;
+                                
+    
+                            }
+                            li:hover{
+                                transform: scale(1.1);
+                            }
+                            li.green{
+                                background-color: green;
+                                span{
+                                    color: white;
+                                }
+                            }
+                            li.span{
+                                background-color: #ccc;
+                            }
+                            li.delete{
+                                background-color: red;
+                                span{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
