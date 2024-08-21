@@ -10,30 +10,30 @@ export default function Panel(){
     },
     {
         by: "https://modularescosta.co",
-        name: "Kevin Bolaños",
-        phone: "3212207563",
+        name: "Felipe",
+        phone: "3158889921",
         state: "abierto"
     },{
-        by: "https://modularescosta.co",
-        name: "Kevin Bolaños",
-        phone: "3212207563",
-        state: "eliminado"
+        by: "https://metalicascosta.com.co",
+        name: "Andrés Orrego",
+        phone: "4371651",
+        state: "Nuevo"
     },
     {
         by: "https://modularescosta.co",
-        name: "Kevin Bolaños",
-        phone: "3212207563",
+        name: "Giselle Duran",
+        phone: "3174531905",
         state: "eliminado"
     },{
         by: "https://modularescosta.co",
-        name: "Kevin Bolaños",
-        phone: "3212207563",
-        state: "eliminado"
+        name: "Elizabeth Ulloa",
+        phone: "3009815120",
+        state: "nuevo"
     },
     {
-        by: "https://modularescosta.co",
-        name: "Kevin Bolaños",
-        phone: "3212207563",
+        by: "https://metalicascosta.com.co",
+        name: "Andres Gomez",
+        phone: "3175519121",
         state: "span"
     },
     {
@@ -44,25 +44,25 @@ export default function Panel(){
     },
     {
         by: "https://modularescosta.co",
-        name: "Kevin Bolaños",
-        phone: "3212207563",
+        name: "Jorge Costa",
+        phone: "3106219130",
+        state: "Nuevo"
+    },
+    {
+        by: "https://metalicascosta.com.co",
+        name: "Mauricio M",
+        phone: "45133321",
         state: "Nuevo"
     },
     {
         by: "https://modularescosta.co",
-        name: "Kevin Bolaños",
-        phone: "3212207563",
+        name: "Nicole S",
+        phone: "3025212121",
         state: "Nuevo"
     },
     {
         by: "https://modularescosta.co",
-        name: "Kevin Bolaños",
-        phone: "3212207563",
-        state: "Nuevo"
-    },
-    {
-        by: "https://modularescosta.co",
-        name: "Kevin Bolaños",
+        name: "Elena",
         phone: "3212207563",
         state: "Nuevo"
     }]
