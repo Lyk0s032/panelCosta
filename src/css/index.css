@@ -4,7 +4,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .panel {
-  height: 100vh;
+  height: 96vh;
   box-sizing: border-box;
 }
 .panel .containerPanel {
@@ -129,8 +129,8 @@
 .panel .containerPanel .stateBox {
   width: 50%;
   height: 100%;
-  box-sizing: border-box;
   padding: 0px 20px;
+  box-sizing: border-box;
 }
 .panel .containerPanel .stateBox .boxCurrentlyNone {
   height: 100%;
@@ -143,82 +143,48 @@
   font-weight: 100;
   color: #ccc;
 }
-.panel .containerPanel .stateBox .boxCurrently {
+.panel .containerPanel .stateBox .res {
+  height: 100%;
+  box-sizing: border-box;
+}
+.panel .containerPanel .stateBox .res .resContainer {
+  height: 100%;
+  box-sizing: border-box;
+}
+.panel .containerPanel .stateBox .res .resContainer .boxCurrently {
   height: 100%;
 }
-.panel .containerPanel .stateBox .boxCurrently .top {
-  height: 10%;
-  display: flex;
-  align-items: center;
-}
-.panel .containerPanel .stateBox .boxCurrently .top h3 {
-  font-weight: 400;
-  font-size: 22px;
-}
-.panel .containerPanel .stateBox .boxCurrently .info {
-  height: 70%;
-  display: flex;
-  align-items: center;
-}
-.panel .containerPanel .stateBox .boxCurrently .info .containerInfoCall {
-  width: 100%;
-  margin: auto;
-}
-.panel .containerPanel .stateBox .boxCurrently .info .containerInfoCall .by strong {
-  font-size: 14px;
-  color: #666;
-}
-.panel .containerPanel .stateBox .boxCurrently .info .containerInfoCall .by span {
-  color: green;
-  font-size: 14px;
-}
-.panel .containerPanel .stateBox .boxCurrently .info .containerInfoCall .user strong {
-  color: #666;
-  font-size: 14px;
-}
-.panel .containerPanel .stateBox .boxCurrently .info .containerInfoCall .user span {
-  color: blue;
-  font-size: 14px;
-}
-.panel .containerPanel .stateBox .boxCurrently .bottom {
+.panel .containerPanel .stateBox .res .resContainer .boxCurrently .top {
   height: 20%;
   display: flex;
   align-items: center;
 }
-.panel .containerPanel .stateBox .boxCurrently .bottom nav {
-  width: 100%;
+.panel .containerPanel .stateBox .res .resContainer .boxCurrently .top h3 {
+  font-weight: 400;
+  font-size: 22px;
 }
-.panel .containerPanel .stateBox .boxCurrently .bottom nav ul {
+.panel .containerPanel .stateBox .res .resContainer .boxCurrently .info {
+  height: 80%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
 }
-.panel .containerPanel .stateBox .boxCurrently .bottom nav ul li {
-  display: inline-block;
-  padding: 8px 40px;
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-right: 5px;
-  border-radius: 20px;
+.panel .containerPanel .stateBox .res .resContainer .boxCurrently .info .containerInfoCall {
+  width: 100%;
+  margin: auto;
+}
+.panel .containerPanel .stateBox .res .resContainer .boxCurrently .info .containerInfoCall .by strong {
+  font-size: 14px;
+  color: #666;
+}
+.panel .containerPanel .stateBox .res .resContainer .boxCurrently .info .containerInfoCall .by span {
+  color: green;
   font-size: 14px;
 }
-.panel .containerPanel .stateBox .boxCurrently .bottom nav ul li:hover {
-  transform: scale(1.1);
+.panel .containerPanel .stateBox .res .resContainer .boxCurrently .info .containerInfoCall .user strong {
+  color: #666;
+  font-size: 14px;
 }
-.panel .containerPanel .stateBox .boxCurrently .bottom nav ul li.green {
-  background-color: green;
-}
-.panel .containerPanel .stateBox .boxCurrently .bottom nav ul li.green span {
-  color: white;
-}
-.panel .containerPanel .stateBox .boxCurrently .bottom nav ul li.span {
-  background-color: #ccc;
-}
-.panel .containerPanel .stateBox .boxCurrently .bottom nav ul li.delete {
-  background-color: red;
-}
-.panel .containerPanel .stateBox .boxCurrently .bottom nav ul li.delete span {
-  color: white;
+.panel .containerPanel .stateBox .res .resContainer .boxCurrently .info .containerInfoCall .user span {
+  color: blue;
+  font-size: 14px;
 }

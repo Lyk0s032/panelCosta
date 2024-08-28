@@ -1,16 +1,13 @@
 .panel{
-    height:100vh;
+    height:96vh;
     box-sizing: border-box;
-
     .containerPanel{
         height:100%;
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
-
         .left{
             width:50%;
-
             .call{
                 height:100%;
                 box-sizing: border-box;
@@ -136,6 +133,7 @@
             height:100%;
             box-sizing: border-box;
             padding:0px 20px;
+            box-sizing: border-box;
             .boxCurrentlyNone{
                 height:100%;
                 display: flex;
@@ -147,94 +145,59 @@
                     color: #ccc;
                 }
             }
-            .boxCurrently{
-                height: 100%;
-                .top{
-                    height:10%;
-                    display: flex;
-                    align-items: center;
-                    
-                    h3{
-                        font-weight: 400;
-                        font-size: 22px;
-                    }
-                }
-                .info{
-                    height:70%;
-                    display: flex;
-                    align-items: center;
-                    .containerInfoCall{
-                        width:100%;
-                        margin:auto;
-    
-                        .by{
-                            strong{
-                                font-size: 14px;
-                                color: #666;
-                            }
-                            span{
-                                color: green;
-                                font-size: 14px;
-                            }
-                        }
-                        .user{
-                            strong{
-                                color: #666;
-                                font-size: 14px;
-                            }
-                            span{
-                                color: blue;
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                }
-                .bottom{
-                    height:20%;
-                    display: flex;
-                    align-items: center;
-    
-                    nav{
-                        width:100%;
-                        ul{
+            .res{
+                height:100%;
+                box-sizing: border-box;
+                .resContainer{
+                    height:100%;
+                    box-sizing: border-box;
+                    .boxCurrently{
+                        height: 100%;
+                        .top{
+                            height:20%;
                             display: flex;
                             align-items: center;
-                            justify-content: space-between;
-                            width:100%;
-                            li{
-                                display: inline-block;
-                                padding:8px 40px;
-                                box-sizing: border-box;
-                                cursor: pointer;
-                                transition: .3s;
-                                margin-right: 5px;
-                                border-radius: 20px;
-                                font-size: 14px;
-                                
-    
+                            
+                            h3{
+                                font-weight: 400;
+                                font-size: 22px;
                             }
-                            li:hover{
-                                transform: scale(1.1);
-                            }
-                            li.green{
-                                background-color: green;
-                                span{
-                                    color: white;
+                        }
+                        .info{
+                            height:80%;
+                            display: flex;
+                            align-items: center;
+                            .containerInfoCall{
+                                width:100%;
+                                margin:auto;
+            
+                                .by{
+                                    strong{
+                                        font-size: 14px;
+                                        color: #666;
+                                    }
+                                    span{
+                                        color: green;
+                                        font-size: 14px;
+                                    }
                                 }
-                            }
-                            li.span{
-                                background-color: #ccc;
-                            }
-                            li.delete{
-                                background-color: red;
-                                span{
-                                    color: white;
+                                .user{
+                                    strong{
+                                        color: #666;
+                                        font-size: 14px;
+                                    }
+                                    span{
+                                        color: blue;
+                                        font-size: 14px;
+                                    }
                                 }
                             }
                         }
+                        
                     }
                 }
             }
         }
     }
 }
+
