@@ -30,6 +30,13 @@ export default function Res(){
                                         <strong>Contacto: </strong> <span>{lead.number}</span><br /><br /><br />
                                         {/* <strong>Estado: </strong> <span>{lead.number}</span> */}
                                     
+                                        <button className='close' onClick={() => {
+                                            params.delete('watch');
+                                            setParams(params);
+                                            dispatch(actions.closeLead());
+                                        }}>
+                                            <span>Cerrar</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>

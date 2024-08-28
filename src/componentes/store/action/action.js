@@ -75,3 +75,10 @@ export function axiosGetLead(carga,id){
         })
     }
 }
+
+export function closeLead(){
+    return {
+        type: 'CLOSE_LEAD',
+        payload: null
+    }
+}

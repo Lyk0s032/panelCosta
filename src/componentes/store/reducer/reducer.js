@@ -31,6 +31,12 @@ export default (state = initialState, action) => {
                 ...state,
                 lead: action.payload
             }
+
+        case 'CLOSE_LEAD':
+            return {
+                ...state,
+                lead: null
+            }
             default:
                 return {
                     ...state

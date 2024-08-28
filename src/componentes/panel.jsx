@@ -9,6 +9,8 @@ export default function Panel(){
     const dispatch = useDispatch();
     const leads = useSelector(store => store.leads);
 
+    const lead = useSelector(store => store.lead);
+
     const [params, setParams] = useSearchParams();
 
 
@@ -134,7 +136,7 @@ export default function Panel(){
                 </div>
                 <div className='stateBox'>
                     {
-                        !currently ?
+                        !params.get('watch') ?
                             <div className='boxCurrentlyNone'>
                                 <div className='containerNone'>
                                     <h1>Haz clic en un registro para visualizar</h1>
