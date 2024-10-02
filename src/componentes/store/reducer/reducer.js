@@ -5,7 +5,13 @@ const initialState = {
     loadingLeads: false,
 
     lead:null,
-    loadingLead:false
+    loadingLead:false,
+    
+    loadingFerias: false,
+    ferias: null,
+
+    loadingFeria: false,
+    feria: null
 }
 
 export default (state = initialState, action) => {
@@ -37,6 +43,38 @@ export default (state = initialState, action) => {
                 ...state,
                 lead: null
             }
+
+
+
+
+        case 'GETTING_FERIAS':
+            return {
+                ...state,
+                loadingFerias: true
+            }
+        case 'GET_FERIAS':
+            return {
+                ...state,
+                ferias: action.payload,
+                loadingFerias:false
+            }
+        case 'GETTING_FERIA':
+            return {
+                ...state,
+                loadingFeria: action.payload
+            }
+        case 'GET_FERIA':
+            return {
+                ...state,
+                feria: action.payload,
+                loadingFeria:false
+            }
+        case 'CLOSE_FERIA':
+            return {
+                ...state,
+                feria: null
+            }
+        
             default:
                 return {
                     ...state
